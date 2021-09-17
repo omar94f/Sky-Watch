@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0703FDFE26F1D93F0081E9A7 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0703FDFD26F1D93F0081E9A7 /* UIView+Constraints.swift */; };
+		0703FE0326F220CD0081E9A7 /* IconViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0703FE0226F220CD0081E9A7 /* IconViewType.swift */; };
+		0703FE0826F25D7C0081E9A7 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0703FE0726F25D7C0081E9A7 /* WeekView.swift */; };
+		0703FE0D26F283C10081E9A7 /* CloudyIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0703FE0C26F283C10081E9A7 /* CloudyIconView.swift */; };
+		0703FE1226F285A20081E9A7 /* CGRect+Min.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0703FE1126F285A20081E9A7 /* CGRect+Min.swift */; };
+		077F680826F0D1EF00829F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F680726F0D1EF00829F04 /* AppDelegate.swift */; };
+		077F680A26F0D1EF00829F04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F680926F0D1EF00829F04 /* SceneDelegate.swift */; };
+		077F680C26F0D1EF00829F04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F680B26F0D1EF00829F04 /* ViewController.swift */; };
+		077F681126F0D1F000829F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077F681026F0D1F000829F04 /* Assets.xcassets */; };
+		077F681426F0D1F000829F04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077F681226F0D1F000829F04 /* LaunchScreen.storyboard */; };
+		077F681F26F0D1F100829F04 /* TheSkyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F681E26F0D1F100829F04 /* TheSkyTests.swift */; };
+		077F682A26F0D1F100829F04 /* TheSkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F682926F0D1F100829F04 /* TheSkyUITests.swift */; };
+		077F684426F0D2D500829F04 /* SunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F684326F0D2D500829F04 /* SunView.swift */; };
+		077F684C26F0E3EA00829F04 /* CanvasAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F684B26F0E3EA00829F04 /* CanvasAnimationType.swift */; };
+		077F685126F0E64700829F04 /* CALayer+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F685026F0E64700829F04 /* CALayer+Animations.swift */; };
+		077F686326F13AE600829F04 /* DayWeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F686226F13AE600829F04 /* DayWeatherButton.swift */; };
+		077F686D26F13D0500829F04 /* WeatherEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F686C26F13D0500829F04 /* WeatherEnum.swift */; };
+		077F687526F13DE700829F04 /* DayWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F687426F13DE700829F04 /* DayWeather.swift */; };
+		077F687A26F13E5500829F04 /* DayEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F687926F13E5500829F04 /* DayEnum.swift */; };
+		07C7F64F26F360B40050E320 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F64E26F360B40050E320 /* CanvasView.swift */; };
+		07C7F66526F365AD0050E320 /* SunnyCanvasAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F66426F365AD0050E320 /* SunnyCanvasAnimationView.swift */; };
+		07C7F67026F3745F0050E320 /* CanvasViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F66F26F3745F0050E320 /* CanvasViewType.swift */; };
+		07C7F67826F39A4A0050E320 /* CloudyCanvasAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F67726F39A4A0050E320 /* CloudyCanvasAnimationView.swift */; };
+		07EAD17426F4623700CDD86D /* CloudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EAD17326F4623700CDD86D /* CloudView.swift */; };
+		07EAD17926F4652A00CDD86D /* CGPoint+Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EAD17826F4652A00CDD86D /* CGPoint+Move.swift */; };
+		07EAD17E26F4992F00CDD86D /* CanvasAnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EAD17D26F4992F00CDD86D /* CanvasAnimationFactory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		077F681B26F0D1F100829F04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 077F67FC26F0D1EF00829F04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 077F680326F0D1EF00829F04;
+			remoteInfo = TheSky;
+		};
+		077F682626F0D1F100829F04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 077F67FC26F0D1EF00829F04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 077F680326F0D1EF00829F04;
+			remoteInfo = TheSky;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0703FDFD26F1D93F0081E9A7 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		0703FE0226F220CD0081E9A7 /* IconViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewType.swift; sourceTree = "<group>"; };
+		0703FE0726F25D7C0081E9A7 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		0703FE0C26F283C10081E9A7 /* CloudyIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudyIconView.swift; sourceTree = "<group>"; };
+		0703FE1126F285A20081E9A7 /* CGRect+Min.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Min.swift"; sourceTree = "<group>"; };
+		077F680426F0D1EF00829F04 /* TheSky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSky.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		077F680726F0D1EF00829F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		077F680926F0D1EF00829F04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		077F680B26F0D1EF00829F04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		077F681026F0D1F000829F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		077F681326F0D1F000829F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		077F681526F0D1F000829F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		077F681A26F0D1F100829F04 /* TheSkyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheSkyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		077F681E26F0D1F100829F04 /* TheSkyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSkyTests.swift; sourceTree = "<group>"; };
+		077F682026F0D1F100829F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		077F682526F0D1F100829F04 /* TheSkyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheSkyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		077F682926F0D1F100829F04 /* TheSkyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSkyUITests.swift; sourceTree = "<group>"; };
+		077F682B26F0D1F100829F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		077F684326F0D2D500829F04 /* SunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunView.swift; sourceTree = "<group>"; };
+		077F684B26F0E3EA00829F04 /* CanvasAnimationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasAnimationType.swift; sourceTree = "<group>"; };
+		077F685026F0E64700829F04 /* CALayer+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Animations.swift"; sourceTree = "<group>"; };
+		077F686226F13AE600829F04 /* DayWeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherButton.swift; sourceTree = "<group>"; };
+		077F686C26F13D0500829F04 /* WeatherEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEnum.swift; sourceTree = "<group>"; };
+		077F687426F13DE700829F04 /* DayWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeather.swift; sourceTree = "<group>"; };
+		077F687926F13E5500829F04 /* DayEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayEnum.swift; sourceTree = "<group>"; };
+		07C7F64E26F360B40050E320 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		07C7F66426F365AD0050E320 /* SunnyCanvasAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunnyCanvasAnimationView.swift; sourceTree = "<group>"; };
+		07C7F66F26F3745F0050E320 /* CanvasViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewType.swift; sourceTree = "<group>"; };
+		07C7F67726F39A4A0050E320 /* CloudyCanvasAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudyCanvasAnimationView.swift; sourceTree = "<group>"; };
+		07EAD17326F4623700CDD86D /* CloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudView.swift; sourceTree = "<group>"; };
+		07EAD17826F4652A00CDD86D /* CGPoint+Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Move.swift"; sourceTree = "<group>"; };
+		07EAD17D26F4992F00CDD86D /* CanvasAnimationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasAnimationFactory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		077F680126F0D1EF00829F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		077F681726F0D1F100829F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		077F682226F0D1F100829F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		074ED29026F4B67500F42AEE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				077F681026F0D1F000829F04 /* Assets.xcassets */,
+				077F681226F0D1F000829F04 /* LaunchScreen.storyboard */,
+				077F681526F0D1F000829F04 /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		077F67FB26F0D1EF00829F04 = {
+			isa = PBXGroup;
+			children = (
+				077F680626F0D1EF00829F04 /* TheSky */,
+				077F681D26F0D1F100829F04 /* TheSkyTests */,
+				077F682826F0D1F100829F04 /* TheSkyUITests */,
+				077F680526F0D1EF00829F04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		077F680526F0D1EF00829F04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				077F680426F0D1EF00829F04 /* TheSky.app */,
+				077F681A26F0D1F100829F04 /* TheSkyTests.xctest */,
+				077F682526F0D1F100829F04 /* TheSkyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		077F680626F0D1EF00829F04 /* TheSky */ = {
+			isa = PBXGroup;
+			children = (
+				077F686B26F13CEF00829F04 /* Model */,
+				077F685826F0F12100829F04 /* Extensions */,
+				077F684226F0D26800829F04 /* Views */,
+				077F686726F13AEC00829F04 /* Controls */,
+				077F683B26F0D23E00829F04 /* Delegates */,
+				077F683A26F0D21E00829F04 /* Screens */,
+				074ED29026F4B67500F42AEE /* Support Files */,
+			);
+			path = TheSky;
+			sourceTree = "<group>";
+		};
+		077F681D26F0D1F100829F04 /* TheSkyTests */ = {
+			isa = PBXGroup;
+			children = (
+				077F681E26F0D1F100829F04 /* TheSkyTests.swift */,
+				077F682026F0D1F100829F04 /* Info.plist */,
+			);
+			path = TheSkyTests;
+			sourceTree = "<group>";
+		};
+		077F682826F0D1F100829F04 /* TheSkyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				077F682926F0D1F100829F04 /* TheSkyUITests.swift */,
+				077F682B26F0D1F100829F04 /* Info.plist */,
+			);
+			path = TheSkyUITests;
+			sourceTree = "<group>";
+		};
+		077F683A26F0D21E00829F04 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				077F680B26F0D1EF00829F04 /* ViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		077F683B26F0D23E00829F04 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				077F680726F0D1EF00829F04 /* AppDelegate.swift */,
+				077F680926F0D1EF00829F04 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		077F684226F0D26800829F04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07C7F65326F362220050E320 /* AnimatedViews */,
+				07C7F66026F363620050E320 /* CanvasAnimationViews */,
+				0703FE0726F25D7C0081E9A7 /* WeekView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		077F685826F0F12100829F04 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				077F685026F0E64700829F04 /* CALayer+Animations.swift */,
+				0703FDFD26F1D93F0081E9A7 /* UIView+Constraints.swift */,
+				0703FE1126F285A20081E9A7 /* CGRect+Min.swift */,
+				07EAD17826F4652A00CDD86D /* CGPoint+Move.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		077F686726F13AEC00829F04 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				077F686226F13AE600829F04 /* DayWeatherButton.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		077F686B26F13CEF00829F04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				077F686C26F13D0500829F04 /* WeatherEnum.swift */,
+				077F687926F13E5500829F04 /* DayEnum.swift */,
+				077F687426F13DE700829F04 /* DayWeather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07C7F65326F362220050E320 /* AnimatedViews */ = {
+			isa = PBXGroup;
+			children = (
+				0703FE0226F220CD0081E9A7 /* IconViewType.swift */,
+				07C7F66F26F3745F0050E320 /* CanvasViewType.swift */,
+				077F684326F0D2D500829F04 /* SunView.swift */,
+				07EAD17326F4623700CDD86D /* CloudView.swift */,
+				0703FE0C26F283C10081E9A7 /* CloudyIconView.swift */,
+			);
+			path = AnimatedViews;
+			sourceTree = "<group>";
+		};
+		07C7F66026F363620050E320 /* CanvasAnimationViews */ = {
+			isa = PBXGroup;
+			children = (
+				07C7F64E26F360B40050E320 /* CanvasView.swift */,
+				077F684B26F0E3EA00829F04 /* CanvasAnimationType.swift */,
+				07C7F66426F365AD0050E320 /* SunnyCanvasAnimationView.swift */,
+				07C7F67726F39A4A0050E320 /* CloudyCanvasAnimationView.swift */,
+				07EAD17D26F4992F00CDD86D /* CanvasAnimationFactory.swift */,
+			);
+			path = CanvasAnimationViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		077F680326F0D1EF00829F04 /* TheSky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 077F682E26F0D1F100829F04 /* Build configuration list for PBXNativeTarget "TheSky" */;
+			buildPhases = (
+				077F680026F0D1EF00829F04 /* Sources */,
+				077F680126F0D1EF00829F04 /* Frameworks */,
+				077F680226F0D1EF00829F04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheSky;
+			productName = TheSky;
+			productReference = 077F680426F0D1EF00829F04 /* TheSky.app */;
+			productType = "com.apple.product-type.application";
+		};
+		077F681926F0D1F100829F04 /* TheSkyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 077F683126F0D1F100829F04 /* Build configuration list for PBXNativeTarget "TheSkyTests" */;
+			buildPhases = (
+				077F681626F0D1F100829F04 /* Sources */,
+				077F681726F0D1F100829F04 /* Frameworks */,
+				077F681826F0D1F100829F04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				077F681C26F0D1F100829F04 /* PBXTargetDependency */,
+			);
+			name = TheSkyTests;
+			productName = TheSkyTests;
+			productReference = 077F681A26F0D1F100829F04 /* TheSkyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		077F682426F0D1F100829F04 /* TheSkyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 077F683426F0D1F100829F04 /* Build configuration list for PBXNativeTarget "TheSkyUITests" */;
+			buildPhases = (
+				077F682126F0D1F100829F04 /* Sources */,
+				077F682226F0D1F100829F04 /* Frameworks */,
+				077F682326F0D1F100829F04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				077F682726F0D1F100829F04 /* PBXTargetDependency */,
+			);
+			name = TheSkyUITests;
+			productName = TheSkyUITests;
+			productReference = 077F682526F0D1F100829F04 /* TheSkyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		077F67FC26F0D1EF00829F04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					077F680326F0D1EF00829F04 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					077F681926F0D1F100829F04 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 077F680326F0D1EF00829F04;
+					};
+					077F682426F0D1F100829F04 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 077F680326F0D1EF00829F04;
+					};
+				};
+			};
+			buildConfigurationList = 077F67FF26F0D1EF00829F04 /* Build configuration list for PBXProject "TheSky" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 077F67FB26F0D1EF00829F04;
+			productRefGroup = 077F680526F0D1EF00829F04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				077F680326F0D1EF00829F04 /* TheSky */,
+				077F681926F0D1F100829F04 /* TheSkyTests */,
+				077F682426F0D1F100829F04 /* TheSkyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		077F680226F0D1EF00829F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				077F681426F0D1F000829F04 /* LaunchScreen.storyboard in Resources */,
+				077F681126F0D1F000829F04 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		077F681826F0D1F100829F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		077F682326F0D1F100829F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		077F680026F0D1EF00829F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0703FE1226F285A20081E9A7 /* CGRect+Min.swift in Sources */,
+				077F680C26F0D1EF00829F04 /* ViewController.swift in Sources */,
+				07C7F67026F3745F0050E320 /* CanvasViewType.swift in Sources */,
+				07EAD17926F4652A00CDD86D /* CGPoint+Move.swift in Sources */,
+				0703FE0326F220CD0081E9A7 /* IconViewType.swift in Sources */,
+				077F687A26F13E5500829F04 /* DayEnum.swift in Sources */,
+				0703FE0D26F283C10081E9A7 /* CloudyIconView.swift in Sources */,
+				0703FE0826F25D7C0081E9A7 /* WeekView.swift in Sources */,
+				077F687526F13DE700829F04 /* DayWeather.swift in Sources */,
+				07EAD17426F4623700CDD86D /* CloudView.swift in Sources */,
+				077F686D26F13D0500829F04 /* WeatherEnum.swift in Sources */,
+				077F684C26F0E3EA00829F04 /* CanvasAnimationType.swift in Sources */,
+				077F686326F13AE600829F04 /* DayWeatherButton.swift in Sources */,
+				077F684426F0D2D500829F04 /* SunView.swift in Sources */,
+				07C7F64F26F360B40050E320 /* CanvasView.swift in Sources */,
+				077F685126F0E64700829F04 /* CALayer+Animations.swift in Sources */,
+				07C7F67826F39A4A0050E320 /* CloudyCanvasAnimationView.swift in Sources */,
+				077F680826F0D1EF00829F04 /* AppDelegate.swift in Sources */,
+				07C7F66526F365AD0050E320 /* SunnyCanvasAnimationView.swift in Sources */,
+				07EAD17E26F4992F00CDD86D /* CanvasAnimationFactory.swift in Sources */,
+				0703FDFE26F1D93F0081E9A7 /* UIView+Constraints.swift in Sources */,
+				077F680A26F0D1EF00829F04 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		077F681626F0D1F100829F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				077F681F26F0D1F100829F04 /* TheSkyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		077F682126F0D1F100829F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				077F682A26F0D1F100829F04 /* TheSkyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		077F681C26F0D1F100829F04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 077F680326F0D1EF00829F04 /* TheSky */;
+			targetProxy = 077F681B26F0D1F100829F04 /* PBXContainerItemProxy */;
+		};
+		077F682726F0D1F100829F04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 077F680326F0D1EF00829F04 /* TheSky */;
+			targetProxy = 077F682626F0D1F100829F04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		077F681226F0D1F000829F04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				077F681326F0D1F000829F04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		077F682C26F0D1F100829F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		077F682D26F0D1F100829F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		077F682F26F0D1F100829F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TheSky/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Omar.TheSky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		077F683026F0D1F100829F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TheSky/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Omar.TheSky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		077F683226F0D1F100829F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TheSkyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Omar.TheSkyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheSky.app/TheSky";
+			};
+			name = Debug;
+		};
+		077F683326F0D1F100829F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TheSkyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Omar.TheSkyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheSky.app/TheSky";
+			};
+			name = Release;
+		};
+		077F683526F0D1F100829F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TheSkyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Omar.TheSkyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TheSky;
+			};
+			name = Debug;
+		};
+		077F683626F0D1F100829F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TheSkyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Omar.TheSkyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TheSky;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		077F67FF26F0D1EF00829F04 /* Build configuration list for PBXProject "TheSky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				077F682C26F0D1F100829F04 /* Debug */,
+				077F682D26F0D1F100829F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		077F682E26F0D1F100829F04 /* Build configuration list for PBXNativeTarget "TheSky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				077F682F26F0D1F100829F04 /* Debug */,
+				077F683026F0D1F100829F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		077F683126F0D1F100829F04 /* Build configuration list for PBXNativeTarget "TheSkyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				077F683226F0D1F100829F04 /* Debug */,
+				077F683326F0D1F100829F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		077F683426F0D1F100829F04 /* Build configuration list for PBXNativeTarget "TheSkyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				077F683526F0D1F100829F04 /* Debug */,
+				077F683626F0D1F100829F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 077F67FC26F0D1EF00829F04 /* Project object */;
+}
