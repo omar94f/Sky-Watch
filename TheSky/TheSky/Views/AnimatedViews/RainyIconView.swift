@@ -64,7 +64,7 @@ class RainyIconView: UIView {
 
         let rainDrop = CALayer()
         rainDrop.frame = CGRect(x: 0, y: 0, width: 1, height: rainDropHeight)
-        rainDrop.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1).cgColor
+        rainDrop.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.7708324476, blue: 0.9764705896, alpha: 1).cgColor
         rainDrop.transform = CATransform3DMakeRotation(.pi/8, 0, 0, 1)
 
         replicator.addSublayer(rainDrop)

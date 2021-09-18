@@ -22,13 +22,14 @@ class RainyCanvasAnimationView: BaseEmitterCanvasAnimationView, CanvasAnimationT
         cell.velocity = 650
         cell.velocityRange = 150
         cell.emissionLongitude = .pi
-        cell.scale = 1
+        cell.scale = 0.7
         cell.scaleRange = 0.5
         cell.color = UIColor.white.cgColor
 
         let rectangle = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: 5))
         rectangle.layer.backgroundColor = UIColor.white.cgColor
         rectangle.layer.opacity = 0.3
+
         cell.contents = rectangle.asImage().cgImage
 
         return cell

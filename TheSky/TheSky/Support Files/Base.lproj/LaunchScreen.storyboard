@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sky Watch" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etD-qb-nzz">
-                                <rect key="frame" x="142.5" y="426.5" width="169" height="43"/>
+                                <rect key="frame" x="122.5" y="426.5" width="169" height="43"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
                                 <color key="textColor" systemColor="systemIndigoColor"/>
                                 <nil key="highlightedColor"/>
@@ -27,7 +27,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="etD-qb-nzz" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="m4z-jI-KU2"/>
-                            <constraint firstItem="etD-qb-nzz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="20" id="zqp-AE-JQr"/>
+                            <constraint firstItem="etD-qb-nzz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zqp-AE-JQr"/>
                         </constraints>
                     </view>
                 </viewController>
