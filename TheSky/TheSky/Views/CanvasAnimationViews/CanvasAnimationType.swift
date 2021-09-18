@@ -14,6 +14,13 @@ protocol CanvasAnimationType: UIView {
 
     func setupForCanvas()
     func present()
+    func retain()
     func dismiss()
+}
+
+extension CanvasAnimationType {
+    func retain() {
+        
+    }
 }
 

@@ -26,7 +26,7 @@ class RainyIconView: UIView {
     func setupLayers() {
 
         let cloud = CAShapeLayer()
-        cloud.fillColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1).cgColor
+        cloud.fillColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1).cgColor
 
         let cloudWidth = containerLayer.bounds.midX
         let cloudHeight = containerLayer.bounds.midX * 0.9
@@ -39,7 +39,7 @@ class RainyIconView: UIView {
         cloud.path = path.cgPath
 
         let cloud2 = CAShapeLayer()
-        cloud2.fillColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1).cgColor
+        cloud2.fillColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1).cgColor
 
         let cloud2Width = cloud.bounds.width * 0.8
         cloud2.frame = CGRect(x: cloud.bounds.width * 0.6,
@@ -69,8 +69,9 @@ class RainyIconView: UIView {
 
         replicator.addSublayer(rainDrop)
 
-        containerLayer.addSublayer(cloud)
         containerLayer.addSublayer(cloud2)
+        containerLayer.addSublayer(cloud)
+
         containerLayer.addSublayer(replicator)
 //        containerLayer.borderWidth = 1
         layer.addSublayer(containerLayer)

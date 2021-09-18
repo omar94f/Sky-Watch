@@ -28,6 +28,8 @@
 		077F687A26F13E5500829F04 /* DayEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F687926F13E5500829F04 /* DayEnum.swift */; };
 		07A8A66B26F5F7CC00293191 /* SnowyIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8A66A26F5F7CC00293191 /* SnowyIconView.swift */; };
 		07A8A67326F60BE400293191 /* RainyIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8A67226F60BE400293191 /* RainyIconView.swift */; };
+		07A8A67826F62A4300293191 /* SnowyCanvasAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8A67726F62A4300293191 /* SnowyCanvasAnimationView.swift */; };
+		07A8A67D26F648CB00293191 /* RainyCanvasAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8A67C26F648CB00293191 /* RainyCanvasAnimationView.swift */; };
 		07C7F64F26F360B40050E320 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F64E26F360B40050E320 /* CanvasView.swift */; };
 		07C7F66526F365AD0050E320 /* SunnyCanvasAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F66426F365AD0050E320 /* SunnyCanvasAnimationView.swift */; };
 		07C7F67026F3745F0050E320 /* CanvasViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F66F26F3745F0050E320 /* CanvasViewType.swift */; };
@@ -82,6 +84,8 @@
 		077F687926F13E5500829F04 /* DayEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayEnum.swift; sourceTree = "<group>"; };
 		07A8A66A26F5F7CC00293191 /* SnowyIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowyIconView.swift; sourceTree = "<group>"; };
 		07A8A67226F60BE400293191 /* RainyIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyIconView.swift; sourceTree = "<group>"; };
+		07A8A67726F62A4300293191 /* SnowyCanvasAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowyCanvasAnimationView.swift; sourceTree = "<group>"; };
+		07A8A67C26F648CB00293191 /* RainyCanvasAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyCanvasAnimationView.swift; sourceTree = "<group>"; };
 		07C7F64E26F360B40050E320 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		07C7F66426F365AD0050E320 /* SunnyCanvasAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunnyCanvasAnimationView.swift; sourceTree = "<group>"; };
 		07C7F66F26F3745F0050E320 /* CanvasViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewType.swift; sourceTree = "<group>"; };
@@ -255,6 +259,8 @@
 				077F684B26F0E3EA00829F04 /* CanvasAnimationType.swift */,
 				07C7F66426F365AD0050E320 /* SunnyCanvasAnimationView.swift */,
 				07C7F67726F39A4A0050E320 /* CloudyCanvasAnimationView.swift */,
+				07A8A67726F62A4300293191 /* SnowyCanvasAnimationView.swift */,
+				07A8A67C26F648CB00293191 /* RainyCanvasAnimationView.swift */,
 				07EAD17D26F4992F00CDD86D /* CanvasAnimationFactory.swift */,
 			);
 			path = CanvasAnimationViews;
@@ -398,6 +404,8 @@
 				07A8A66B26F5F7CC00293191 /* SnowyIconView.swift in Sources */,
 				0703FE0D26F283C10081E9A7 /* CloudyIconView.swift in Sources */,
 				0703FE0826F25D7C0081E9A7 /* WeekView.swift in Sources */,
+				07A8A67D26F648CB00293191 /* RainyCanvasAnimationView.swift in Sources */,
+				07A8A67826F62A4300293191 /* SnowyCanvasAnimationView.swift in Sources */,
 				077F687526F13DE700829F04 /* DayWeather.swift in Sources */,
 				07EAD17426F4623700CDD86D /* CloudView.swift in Sources */,
 				077F686D26F13D0500829F04 /* WeatherEnum.swift in Sources */,

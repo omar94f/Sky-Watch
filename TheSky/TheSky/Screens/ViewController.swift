@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         let frame = CGRect(x: 20, y: view.bounds.quarterHeight - 50, width: 120, height: 50)
         let label = UILabel(frame: frame)
         label.textColor = .white
-        label.font = .systemFont(ofSize: 32, weight: .medium)
+        label.font = .systemFont(ofSize: 34, weight: .semibold)
         return label
     }()
 
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         let frame = CGRect(x: 20, y: view.bounds.quarterHeight, width: 120, height: 50)
         let label = UILabel(frame: frame)
         label.textColor = .white
-        label.font = .systemFont(ofSize: 30, weight: .medium)
+        label.font = .systemFont(ofSize: 32, weight: .medium)
         return label
     }()
 
@@ -35,11 +35,11 @@ class ViewController: UIViewController {
 
     private lazy var weekView: WeekView = {
 
-        let monWeather = DayWeather(day: .mon, weather: .sunny, temperatue: 34)
-        let tueWeather = DayWeather(day: .tue, weather: .cloudy, temperatue: 24)
-        let wedWeather = DayWeather(day: .wed, weather: .sunny, temperatue: 30)
-        let thuWeather = DayWeather(day: .thu, weather: .snowy, temperatue: 2)
-        let friWeather = DayWeather(day: .fri, weather: .rainy, temperatue: 22)
+        let monWeather = DayWeather(day: .mon, weather: .cloudy, temperatue: 24)
+        let tueWeather = DayWeather(day: .tue, weather: .sunny, temperatue: 34)
+        let wedWeather = DayWeather(day: .wed, weather: .snowy, temperatue: 2)
+        let thuWeather = DayWeather(day: .thu, weather: .cloudy, temperatue: 26)
+        let friWeather = DayWeather(day: .fri, weather: .rainy, temperatue: 16)
     
         let week = WeekView(frame: .zero,
                             dailyWeather: [monWeather, tueWeather, wedWeather, thuWeather, friWeather],

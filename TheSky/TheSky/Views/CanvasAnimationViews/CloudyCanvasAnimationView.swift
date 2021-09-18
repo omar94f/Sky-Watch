@@ -63,24 +63,30 @@ extension CloudyCanvasAnimationView: CanvasAnimationType {
 
     func present() {
         sunView.presentAnimation()
-        cloudRight.presentAnimation()
-        cloudLeft.presentAnimation()
+        let finalFrameRight = cloudRight.frame.applying(CGAffineTransform(translationX: 0, y: -bounds.quarterHeight * 1.7))
+        let finalFrameLeft = cloudLeft.frame.applying(CGAffineTransform(translationX: 0, y: -bounds.quarterHeight * 1.7))
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 5, options: .curveEaseOut) { [weak self] in
+            self?.cloudRight.frame = finalFrameRight
+            self?.cloudLeft.frame = finalFrameLeft
+        }
+
     }
 
     func dismiss() {
         let dispatchGroup = DispatchGroup()
-        dispatchGroup.enter()
-        cloudLeft.dismissAnimation {
-            dispatchGroup.leave()
+
+        let finalFrameRight = cloudRight.frame.applying(CGAffineTransform(translationX: 0, y: bounds.height ))
+        let finalFrameLeft = cloudLeft.frame.applying(CGAffineTransform(translationX: 0, y: bounds.height ))
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 5, options: .curveEaseOut) { [weak self] in
+            self?.cloudRight.frame = finalFrameRight
+            self?.cloudLeft.frame = finalFrameLeft
         }
-        dispatchGroup.enter()
-        cloudRight.dismissAnimation {
-            dispatchGroup.leave()
-        }
+
         dispatchGroup.enter()
         sunView.dismissAnimation {
             dispatchGroup.leave()
         }
+
         dispatchGroup.notify(queue: .main) { [weak self] in
             self?.removeFromSuperview()
         }

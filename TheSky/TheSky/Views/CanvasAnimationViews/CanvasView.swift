@@ -24,9 +24,23 @@ class CanvasView: UIView {
 
     func addCanvasAnimation(animation: CanvasAnimationType){
         currentAnimation?.dismiss()
-        currentAnimation = animation
         gradient.colors = animation.gradientColors
+        checkAndAddAnimation(animation: animation)
+    }
+
+    private func checkAndAddAnimation(animation: CanvasAnimationType) {
+        let result = subviews.filter { (view) -> Bool in
+            return type(of: view) == type(of: animation)
+        }
+        guard result.isEmpty else {
+            let anim = (result[0] as? CanvasAnimationType)
+            anim?.retain()
+            currentAnimation = anim
+            return
+            
+        }
         addSubview(animation)
+        currentAnimation = animation
         currentAnimation?.setupForCanvas()
         currentAnimation?.present()
     }

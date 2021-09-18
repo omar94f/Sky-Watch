@@ -15,8 +15,10 @@ struct CanvasAnimationFactory {
             return  SunnyCanvasAnimationView(frame: frame)
         case .cloudy:
             return CloudyCanvasAnimationView(frame: frame)
-        default:
-            return CloudyCanvasAnimationView(frame: frame)
+        case .snowy:
+            return SnowyCanvasAnimationView(frame: frame)
+        case .rainy:
+            return RainyCanvasAnimationView(frame: frame)
         }
     }
 }

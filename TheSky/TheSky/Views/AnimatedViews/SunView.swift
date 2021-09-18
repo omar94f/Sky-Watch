@@ -140,6 +140,11 @@ extension SunView: CanvasViewType {
     }
 
     func dismissAnimation(completion: CanvasAnimationCompletion) {
+
+        guard !layers.isEmpty else {
+            return
+        }
+
         CATransaction.begin()
         CATransaction.setCompletionBlock {
             completion?()

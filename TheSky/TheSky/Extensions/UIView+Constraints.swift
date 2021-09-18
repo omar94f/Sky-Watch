@@ -13,6 +13,13 @@ extension UIView {
         return CGPoint(x: bounds.midX, y: bounds.midY)
     }
 
+    func asImage() -> UIImage {
+        let renderer = UIGraphicsImageRenderer(bounds: bounds)
+        return renderer.image { rendererContext in
+            layer.render(in: rendererContext.cgContext)
+        }
+    }
+
     @discardableResult
     func preparedForAutolayout() -> Self {
         translatesAutoresizingMaskIntoConstraints = false
