@@ -11,6 +11,22 @@ class ViewController: UIViewController {
 
     var currentWeather: WeatherEnum?
 
+    private lazy var dayLabel: UILabel = {
+        let frame = CGRect(x: 20, y: view.bounds.quarterHeight - 50, width: 120, height: 50)
+        let label = UILabel(frame: frame)
+        label.textColor = .white
+        label.font = .systemFont(ofSize: 32, weight: .medium)
+        return label
+    }()
+
+    private lazy var temperatureLabel: UILabel = {
+        let frame = CGRect(x: 20, y: view.bounds.quarterHeight, width: 120, height: 50)
+        let label = UILabel(frame: frame)
+        label.textColor = .white
+        label.font = .systemFont(ofSize: 30, weight: .medium)
+        return label
+    }()
+
     private lazy var canvas: CanvasView = {
         let canvas = CanvasView()
         canvas.preparedForAutolayout()
@@ -21,19 +37,21 @@ class ViewController: UIViewController {
 
         let monWeather = DayWeather(day: .mon, weather: .sunny, temperatue: 34)
         let tueWeather = DayWeather(day: .tue, weather: .cloudy, temperatue: 24)
-        let wedWeather = DayWeather(day: .wed, weather: .sunny, temperatue: 24)
-        let thuWeather = DayWeather(day: .thu, weather: .sunny, temperatue: 24)
-        let friWeather = DayWeather(day: .fri, weather: .sunny, temperatue: 24)
+        let wedWeather = DayWeather(day: .wed, weather: .sunny, temperatue: 30)
+        let thuWeather = DayWeather(day: .thu, weather: .sunny, temperatue: 29)
+        let friWeather = DayWeather(day: .fri, weather: .sunny, temperatue: 32)
     
         let week = WeekView(frame: .zero,
                             dailyWeather: [monWeather, tueWeather, wedWeather, thuWeather, friWeather],
                             selectedDay: monWeather, actionHandler: .init {
                                 [weak self] day in
-
+                                self?.temperatureLabel.text = "\(Int(day.temperatue))º"
+                                self?.dayLabel.text = day.day.name
                                 guard let self = self, self.currentWeather != day.weather else { return }
                                 let canvasAnimation = CanvasAnimationFactory.getAnimation(for: day.weather, frame: self.canvas.bounds)
                                 self.canvas.addCanvasAnimation(animation: canvasAnimation)
                                 self.currentWeather = day.weather
+
                             })
         week.backgroundColor = .white
         return week.preparedForAutolayout()
@@ -55,7 +73,13 @@ class ViewController: UIViewController {
         setup()
     }
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+
     func setup() {
+
+        
         view.backgroundColor = .white
         view.addSubview(stackView)
         NSLayoutConstraint.activate([
@@ -66,6 +90,8 @@ class ViewController: UIViewController {
         stackView.layoutSubviews()
         canvas.setupLayout()
         weekView.setupLayout()
+        view.addSubview(temperatureLabel)
+        view.addSubview(dayLabel)
     }
 }
 

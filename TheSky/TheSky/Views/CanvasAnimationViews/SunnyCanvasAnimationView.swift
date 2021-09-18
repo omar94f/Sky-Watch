@@ -10,7 +10,7 @@ import UIKit
 class SunnyCanvasAnimationView: UIView {
 
     var gradientColors: [CGColor] {
-        return [#colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1), #colorLiteral(red: 0.9372549057, green: 0.4818963642, blue: 0.1921568662, alpha: 1)].map{ $0.cgColor}
+        return [#colorLiteral(red: 0.9686274529, green: 0.8380189354, blue: 0.3041252315, alpha: 1), #colorLiteral(red: 0.9372549057, green: 0.4818963642, blue: 0.1921568662, alpha: 1)].map{ $0.cgColor}
     }
 
     private lazy var sunView: CanvasViewType = {
@@ -38,8 +38,8 @@ extension SunnyCanvasAnimationView: CanvasAnimationType {
     }
 
     func dismiss() {
-        sunView.dismissAnimation(completion: {
-            self.removeFromSuperview()
+        sunView.dismissAnimation(completion: { [weak self] in
+            self?.removeFromSuperview()
         })
     }
 }
