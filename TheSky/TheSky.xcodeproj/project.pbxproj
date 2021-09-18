@@ -26,6 +26,8 @@
 		077F686D26F13D0500829F04 /* WeatherEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F686C26F13D0500829F04 /* WeatherEnum.swift */; };
 		077F687526F13DE700829F04 /* DayWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F687426F13DE700829F04 /* DayWeather.swift */; };
 		077F687A26F13E5500829F04 /* DayEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F687926F13E5500829F04 /* DayEnum.swift */; };
+		07A8A66B26F5F7CC00293191 /* SnowyIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8A66A26F5F7CC00293191 /* SnowyIconView.swift */; };
+		07A8A67326F60BE400293191 /* RainyIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8A67226F60BE400293191 /* RainyIconView.swift */; };
 		07C7F64F26F360B40050E320 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F64E26F360B40050E320 /* CanvasView.swift */; };
 		07C7F66526F365AD0050E320 /* SunnyCanvasAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F66426F365AD0050E320 /* SunnyCanvasAnimationView.swift */; };
 		07C7F67026F3745F0050E320 /* CanvasViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F66F26F3745F0050E320 /* CanvasViewType.swift */; };
@@ -78,6 +80,8 @@
 		077F686C26F13D0500829F04 /* WeatherEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEnum.swift; sourceTree = "<group>"; };
 		077F687426F13DE700829F04 /* DayWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeather.swift; sourceTree = "<group>"; };
 		077F687926F13E5500829F04 /* DayEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayEnum.swift; sourceTree = "<group>"; };
+		07A8A66A26F5F7CC00293191 /* SnowyIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowyIconView.swift; sourceTree = "<group>"; };
+		07A8A67226F60BE400293191 /* RainyIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyIconView.swift; sourceTree = "<group>"; };
 		07C7F64E26F360B40050E320 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		07C7F66426F365AD0050E320 /* SunnyCanvasAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunnyCanvasAnimationView.swift; sourceTree = "<group>"; };
 		07C7F66F26F3745F0050E320 /* CanvasViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewType.swift; sourceTree = "<group>"; };
@@ -145,12 +149,12 @@
 		077F680626F0D1EF00829F04 /* TheSky */ = {
 			isa = PBXGroup;
 			children = (
-				077F686B26F13CEF00829F04 /* Model */,
 				077F685826F0F12100829F04 /* Extensions */,
+				077F686B26F13CEF00829F04 /* Model */,
 				077F684226F0D26800829F04 /* Views */,
 				077F686726F13AEC00829F04 /* Controls */,
-				077F683B26F0D23E00829F04 /* Delegates */,
 				077F683A26F0D21E00829F04 /* Screens */,
+				077F683B26F0D23E00829F04 /* Delegates */,
 				074ED29026F4B67500F42AEE /* Support Files */,
 			);
 			path = TheSky;
@@ -238,6 +242,8 @@
 				077F684326F0D2D500829F04 /* SunView.swift */,
 				07EAD17326F4623700CDD86D /* CloudView.swift */,
 				0703FE0C26F283C10081E9A7 /* CloudyIconView.swift */,
+				07A8A66A26F5F7CC00293191 /* SnowyIconView.swift */,
+				07A8A67226F60BE400293191 /* RainyIconView.swift */,
 			);
 			path = AnimatedViews;
 			sourceTree = "<group>";
@@ -389,12 +395,14 @@
 				07EAD17926F4652A00CDD86D /* CGPoint+Move.swift in Sources */,
 				0703FE0326F220CD0081E9A7 /* IconViewType.swift in Sources */,
 				077F687A26F13E5500829F04 /* DayEnum.swift in Sources */,
+				07A8A66B26F5F7CC00293191 /* SnowyIconView.swift in Sources */,
 				0703FE0D26F283C10081E9A7 /* CloudyIconView.swift in Sources */,
 				0703FE0826F25D7C0081E9A7 /* WeekView.swift in Sources */,
 				077F687526F13DE700829F04 /* DayWeather.swift in Sources */,
 				07EAD17426F4623700CDD86D /* CloudView.swift in Sources */,
 				077F686D26F13D0500829F04 /* WeatherEnum.swift in Sources */,
 				077F684C26F0E3EA00829F04 /* CanvasAnimationType.swift in Sources */,
+				07A8A67326F60BE400293191 /* RainyIconView.swift in Sources */,
 				077F686326F13AE600829F04 /* DayWeatherButton.swift in Sources */,
 				077F684426F0D2D500829F04 /* SunView.swift in Sources */,
 				07C7F64F26F360B40050E320 /* CanvasView.swift in Sources */,

@@ -16,6 +16,10 @@ struct DayWeather {
             return SunView()
         case .cloudy:
             return CloudyIconView()
+        case .snowy:
+            return SnowyIconView()
+        case .rainy:
+            return RainyIconView()
         default:
             return SunView()
         }

@@ -38,8 +38,8 @@ class ViewController: UIViewController {
         let monWeather = DayWeather(day: .mon, weather: .sunny, temperatue: 34)
         let tueWeather = DayWeather(day: .tue, weather: .cloudy, temperatue: 24)
         let wedWeather = DayWeather(day: .wed, weather: .sunny, temperatue: 30)
-        let thuWeather = DayWeather(day: .thu, weather: .sunny, temperatue: 29)
-        let friWeather = DayWeather(day: .fri, weather: .sunny, temperatue: 32)
+        let thuWeather = DayWeather(day: .thu, weather: .snowy, temperatue: 2)
+        let friWeather = DayWeather(day: .fri, weather: .rainy, temperatue: 22)
     
         let week = WeekView(frame: .zero,
                             dailyWeather: [monWeather, tueWeather, wedWeather, thuWeather, friWeather],

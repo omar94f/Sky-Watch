@@ -67,10 +67,9 @@ class WeekView: UIView {
         stackView.fillSuperview(edgeInset: UIEdgeInsets(top: 12, left: 0, bottom: 0, right: 0))
         layoutIfNeeded()
         layoutSubviews()
-        stackView.arrangedSubviews.forEach { view in
-            (view as? DayWeatherButton)?.setupWeatherView()
-        }
+
         buttons.forEach { (button) in
+            button.setupWeatherView()
             if button.dayWeather.day == selectedDay.day {
                 selectedButton = button
             }

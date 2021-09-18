@@ -173,6 +173,9 @@ extension SunView: IconViewType {
     }
 
     func animateGrow() {
+        guard !layers.isEmpty else {
+            return
+        }
        
         var delayDifference = 0.1
         var sizeDifference = scalingFactor + scalingIncrement*circlesCount
@@ -185,7 +188,9 @@ extension SunView: IconViewType {
     }
 
     func animateShrink() {
-
+        guard !layers.isEmpty else {
+            return
+        }
         var counter = 0.1
         shrinkAnimation.toValue = 1
         shrinkAnimation.duration = 0.2
