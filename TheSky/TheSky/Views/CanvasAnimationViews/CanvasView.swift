@@ -28,6 +28,8 @@ class CanvasView: UIView {
         checkAndAddAnimation(animation: animation)
     }
 
+    // Check weather new animation already exists in the hierarchy and if it does
+    // prevent the view from removing itself
     private func checkAndAddAnimation(animation: CanvasAnimationType) {
         let result = subviews.filter { (view) -> Bool in
             return type(of: view) == type(of: animation)

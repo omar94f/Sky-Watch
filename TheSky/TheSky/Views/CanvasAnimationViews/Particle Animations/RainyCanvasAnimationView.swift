@@ -8,13 +8,11 @@
 import UIKit
 
 
-class RainyCanvasAnimationView: UIView {
+class RainyCanvasAnimationView: BaseEmitterCanvasAnimationView, CanvasAnimationType {
 
     var gradientColors: [CGColor]  {
         return [#colorLiteral(red: 0.490050183, green: 0.6859143806, blue: 0.792872958, alpha: 1), #colorLiteral(red: 0.2095845228, green: 0.403395012, blue: 0.6734380265, alpha: 1)].map{ $0.cgColor}
     }
-
-    private var shouldRemove = true
 
     private lazy var rainCell: CAEmitterCell = {
         let cell = CAEmitterCell()
@@ -47,56 +45,17 @@ class RainyCanvasAnimationView: UIView {
         return cloud
     }()
 
-    private lazy var emitter: CAEmitterLayer = {
-        let emitterLayer = CAEmitterLayer()
-        emitterLayer.frame = bounds
-        emitterLayer.emitterPosition = CGPoint(x: bounds.midX, y: layoutMargins.top)
-        emitterLayer.emitterSize = CGSize(width: bounds.width, height: 1)
-        emitterLayer.emitterShape = .line
-        emitterLayer.masksToBounds = true
 
-        emitterLayer.emitterCells = [rainCell]
-        return emitterLayer
-    }()
-
-    func setupLayers() {
-
-        layer.addSublayer(emitter)
-    }
-
-}
-
-extension RainyCanvasAnimationView: CanvasAnimationType {
-
-    func setupForCanvas() {
+    override func setupForCanvas() {
         setupLayers()
+        emitter.emitterCells = [rainCell]
         cloud.setupForCanvas()
         cloud.layer.transform = CATransform3DMakeScale(1.7, -1.5, 1)
         addSubview(cloud)
     }
 
-    func present() {
+    override func present() {
         emitter.beginTime = CACurrentMediaTime()
         emitter.birthRate = 1
-        
-    }
-    func retain() {
-        shouldRemove = false
-        alpha = 1
-    }
-
-    func dismiss() {
-//        emitter.birthRate = 0
-        UIView.animate(withDuration: 1) {
-            [weak self] in
-            self?.alpha = 0
-        } completion: { [weak self] _ in
-            guard let self = self else {return}
-            if self.shouldRemove {
-                self.removeFromSuperview()
-            } else {
-                self.shouldRemove = true
-            }
-        }
     }
 }

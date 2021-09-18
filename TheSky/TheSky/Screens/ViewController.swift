@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         let frame = CGRect(x: 20, y: view.bounds.quarterHeight - 50, width: 120, height: 50)
         let label = UILabel(frame: frame)
         label.textColor = .white
-        label.font = .systemFont(ofSize: 34, weight: .semibold)
+        label.font = .systemFont(ofSize: 34, weight: .medium)
         return label
     }()
 
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         let frame = CGRect(x: 20, y: view.bounds.quarterHeight, width: 120, height: 50)
         let label = UILabel(frame: frame)
         label.textColor = .white
-        label.font = .systemFont(ofSize: 32, weight: .medium)
+        label.font = .systemFont(ofSize: 32, weight: .regular)
         return label
     }()
 

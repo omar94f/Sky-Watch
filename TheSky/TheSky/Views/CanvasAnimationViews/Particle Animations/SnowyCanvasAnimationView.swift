@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SnowyCanvasAnimationView: UIView {
+class SnowyCanvasAnimationView: BaseEmitterCanvasAnimationView, CanvasAnimationType {
 
     var gradientColors: [CGColor]  {
         return [#colorLiteral(red: 0.6142063775, green: 0.8596935612, blue: 0.9937505265, alpha: 1), #colorLiteral(red: 0.4843137264, green: 0.74807785, blue: 0.9686274529, alpha: 1)].map{ $0.cgColor}
@@ -35,47 +35,11 @@ class SnowyCanvasAnimationView: UIView {
         return cell
     }()
 
-    
 
-    private lazy var emitter: CAEmitterLayer = {
-        let emitterLayer = CAEmitterLayer()
-        emitterLayer.frame = bounds
-        emitterLayer.emitterPosition = CGPoint(x: bounds.midX, y: layoutMargins.top)
-        emitterLayer.emitterSize = CGSize(width: bounds.width, height: 1)
-        emitterLayer.emitterShape = .line
-        emitterLayer.masksToBounds = true
 
-        emitterLayer.emitterCells = [snowCell]
-        return emitterLayer
-    }()
-
-    func setupLayers() {
-
-        layer.addSublayer(emitter)
-    }
-
-}
-
-extension SnowyCanvasAnimationView: CanvasAnimationType {
-
-    func setupForCanvas() {
+    override func setupForCanvas() {
         setupLayers()
+        emitter.emitterCells = [snowCell]
     }
 
-    func present() {
-//        emitter.beginTime = CACurrentMediaTime()
-        emitter.birthRate = 1
-
-    }
-
-    func dismiss() {
-        emitter.birthRate = 0
-
-        UIView.animate(withDuration: 1) {
-            [weak self] in
-            self?.alpha = 0
-        } completion: { [weak self] _ in
-            self?.removeFromSuperview()
-        }
-    }
 }

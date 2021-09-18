@@ -30,6 +30,7 @@
 		07A8A67326F60BE400293191 /* RainyIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8A67226F60BE400293191 /* RainyIconView.swift */; };
 		07A8A67826F62A4300293191 /* SnowyCanvasAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8A67726F62A4300293191 /* SnowyCanvasAnimationView.swift */; };
 		07A8A67D26F648CB00293191 /* RainyCanvasAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8A67C26F648CB00293191 /* RainyCanvasAnimationView.swift */; };
+		07A8A68226F6677900293191 /* BaseEmitterCanvasAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8A68126F6677900293191 /* BaseEmitterCanvasAnimationView.swift */; };
 		07C7F64F26F360B40050E320 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F64E26F360B40050E320 /* CanvasView.swift */; };
 		07C7F66526F365AD0050E320 /* SunnyCanvasAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F66426F365AD0050E320 /* SunnyCanvasAnimationView.swift */; };
 		07C7F67026F3745F0050E320 /* CanvasViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F66F26F3745F0050E320 /* CanvasViewType.swift */; };
@@ -86,6 +87,7 @@
 		07A8A67226F60BE400293191 /* RainyIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyIconView.swift; sourceTree = "<group>"; };
 		07A8A67726F62A4300293191 /* SnowyCanvasAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowyCanvasAnimationView.swift; sourceTree = "<group>"; };
 		07A8A67C26F648CB00293191 /* RainyCanvasAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyCanvasAnimationView.swift; sourceTree = "<group>"; };
+		07A8A68126F6677900293191 /* BaseEmitterCanvasAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEmitterCanvasAnimationView.swift; sourceTree = "<group>"; };
 		07C7F64E26F360B40050E320 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		07C7F66426F365AD0050E320 /* SunnyCanvasAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunnyCanvasAnimationView.swift; sourceTree = "<group>"; };
 		07C7F66F26F3745F0050E320 /* CanvasViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewType.swift; sourceTree = "<group>"; };
@@ -238,6 +240,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		07A8A68626F66A6500293191 /* Particle Animations */ = {
+			isa = PBXGroup;
+			children = (
+				07A8A68126F6677900293191 /* BaseEmitterCanvasAnimationView.swift */,
+				07A8A67726F62A4300293191 /* SnowyCanvasAnimationView.swift */,
+				07A8A67C26F648CB00293191 /* RainyCanvasAnimationView.swift */,
+			);
+			path = "Particle Animations";
+			sourceTree = "<group>";
+		};
 		07C7F65326F362220050E320 /* AnimatedViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,8 +271,7 @@
 				077F684B26F0E3EA00829F04 /* CanvasAnimationType.swift */,
 				07C7F66426F365AD0050E320 /* SunnyCanvasAnimationView.swift */,
 				07C7F67726F39A4A0050E320 /* CloudyCanvasAnimationView.swift */,
-				07A8A67726F62A4300293191 /* SnowyCanvasAnimationView.swift */,
-				07A8A67C26F648CB00293191 /* RainyCanvasAnimationView.swift */,
+				07A8A68626F66A6500293191 /* Particle Animations */,
 				07EAD17D26F4992F00CDD86D /* CanvasAnimationFactory.swift */,
 			);
 			path = CanvasAnimationViews;
@@ -416,6 +427,7 @@
 				07C7F64F26F360B40050E320 /* CanvasView.swift in Sources */,
 				077F685126F0E64700829F04 /* CALayer+Animations.swift in Sources */,
 				07C7F67826F39A4A0050E320 /* CloudyCanvasAnimationView.swift in Sources */,
+				07A8A68226F6677900293191 /* BaseEmitterCanvasAnimationView.swift in Sources */,
 				077F680826F0D1EF00829F04 /* AppDelegate.swift in Sources */,
 				07C7F66526F365AD0050E320 /* SunnyCanvasAnimationView.swift in Sources */,
 				07EAD17E26F4992F00CDD86D /* CanvasAnimationFactory.swift in Sources */,
