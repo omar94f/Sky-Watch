@@ -17,8 +17,6 @@
 		077F680C26F0D1EF00829F04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F680B26F0D1EF00829F04 /* ViewController.swift */; };
 		077F681126F0D1F000829F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077F681026F0D1F000829F04 /* Assets.xcassets */; };
 		077F681426F0D1F000829F04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077F681226F0D1F000829F04 /* LaunchScreen.storyboard */; };
-		077F681F26F0D1F100829F04 /* TheSkyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F681E26F0D1F100829F04 /* TheSkyTests.swift */; };
-		077F682A26F0D1F100829F04 /* TheSkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F682926F0D1F100829F04 /* TheSkyUITests.swift */; };
 		077F684426F0D2D500829F04 /* SunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F684326F0D2D500829F04 /* SunView.swift */; };
 		077F684C26F0E3EA00829F04 /* CanvasAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F684B26F0E3EA00829F04 /* CanvasAnimationType.swift */; };
 		077F685126F0E64700829F04 /* CALayer+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F685026F0E64700829F04 /* CALayer+Animations.swift */; };
@@ -40,23 +38,6 @@
 		07EAD17E26F4992F00CDD86D /* CanvasAnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EAD17D26F4992F00CDD86D /* CanvasAnimationFactory.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		077F681B26F0D1F100829F04 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 077F67FC26F0D1EF00829F04 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 077F680326F0D1EF00829F04;
-			remoteInfo = TheSky;
-		};
-		077F682626F0D1F100829F04 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 077F67FC26F0D1EF00829F04 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 077F680326F0D1EF00829F04;
-			remoteInfo = TheSky;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		0703FDFD26F1D93F0081E9A7 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		0703FE0226F220CD0081E9A7 /* IconViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewType.swift; sourceTree = "<group>"; };
@@ -70,12 +51,6 @@
 		077F681026F0D1F000829F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		077F681326F0D1F000829F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		077F681526F0D1F000829F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		077F681A26F0D1F100829F04 /* TheSkyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheSkyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		077F681E26F0D1F100829F04 /* TheSkyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSkyTests.swift; sourceTree = "<group>"; };
-		077F682026F0D1F100829F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		077F682526F0D1F100829F04 /* TheSkyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheSkyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		077F682926F0D1F100829F04 /* TheSkyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSkyUITests.swift; sourceTree = "<group>"; };
-		077F682B26F0D1F100829F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		077F684326F0D2D500829F04 /* SunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunView.swift; sourceTree = "<group>"; };
 		077F684B26F0E3EA00829F04 /* CanvasAnimationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasAnimationType.swift; sourceTree = "<group>"; };
 		077F685026F0E64700829F04 /* CALayer+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Animations.swift"; sourceTree = "<group>"; };
@@ -105,20 +80,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		077F681726F0D1F100829F04 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		077F682226F0D1F100829F04 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -136,8 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				077F680626F0D1EF00829F04 /* TheSky */,
-				077F681D26F0D1F100829F04 /* TheSkyTests */,
-				077F682826F0D1F100829F04 /* TheSkyUITests */,
 				077F680526F0D1EF00829F04 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -146,8 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				077F680426F0D1EF00829F04 /* TheSky.app */,
-				077F681A26F0D1F100829F04 /* TheSkyTests.xctest */,
-				077F682526F0D1F100829F04 /* TheSkyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,24 +121,6 @@
 				074ED29026F4B67500F42AEE /* Support Files */,
 			);
 			path = TheSky;
-			sourceTree = "<group>";
-		};
-		077F681D26F0D1F100829F04 /* TheSkyTests */ = {
-			isa = PBXGroup;
-			children = (
-				077F681E26F0D1F100829F04 /* TheSkyTests.swift */,
-				077F682026F0D1F100829F04 /* Info.plist */,
-			);
-			path = TheSkyTests;
-			sourceTree = "<group>";
-		};
-		077F682826F0D1F100829F04 /* TheSkyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				077F682926F0D1F100829F04 /* TheSkyUITests.swift */,
-				077F682B26F0D1F100829F04 /* Info.plist */,
-			);
-			path = TheSkyUITests;
 			sourceTree = "<group>";
 		};
 		077F683A26F0D21E00829F04 /* Screens */ = {
@@ -297,42 +236,6 @@
 			productReference = 077F680426F0D1EF00829F04 /* TheSky.app */;
 			productType = "com.apple.product-type.application";
 		};
-		077F681926F0D1F100829F04 /* TheSkyTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 077F683126F0D1F100829F04 /* Build configuration list for PBXNativeTarget "TheSkyTests" */;
-			buildPhases = (
-				077F681626F0D1F100829F04 /* Sources */,
-				077F681726F0D1F100829F04 /* Frameworks */,
-				077F681826F0D1F100829F04 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				077F681C26F0D1F100829F04 /* PBXTargetDependency */,
-			);
-			name = TheSkyTests;
-			productName = TheSkyTests;
-			productReference = 077F681A26F0D1F100829F04 /* TheSkyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		077F682426F0D1F100829F04 /* TheSkyUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 077F683426F0D1F100829F04 /* Build configuration list for PBXNativeTarget "TheSkyUITests" */;
-			buildPhases = (
-				077F682126F0D1F100829F04 /* Sources */,
-				077F682226F0D1F100829F04 /* Frameworks */,
-				077F682326F0D1F100829F04 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				077F682726F0D1F100829F04 /* PBXTargetDependency */,
-			);
-			name = TheSkyUITests;
-			productName = TheSkyUITests;
-			productReference = 077F682526F0D1F100829F04 /* TheSkyUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -344,14 +247,6 @@
 				TargetAttributes = {
 					077F680326F0D1EF00829F04 = {
 						CreatedOnToolsVersion = 12.1;
-					};
-					077F681926F0D1F100829F04 = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = 077F680326F0D1EF00829F04;
-					};
-					077F682426F0D1F100829F04 = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = 077F680326F0D1EF00829F04;
 					};
 				};
 			};
@@ -369,8 +264,6 @@
 			projectRoot = "";
 			targets = (
 				077F680326F0D1EF00829F04 /* TheSky */,
-				077F681926F0D1F100829F04 /* TheSkyTests */,
-				077F682426F0D1F100829F04 /* TheSkyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -382,20 +275,6 @@
 			files = (
 				077F681426F0D1F000829F04 /* LaunchScreen.storyboard in Resources */,
 				077F681126F0D1F000829F04 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		077F681826F0D1F100829F04 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		077F682326F0D1F100829F04 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,36 +315,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		077F681626F0D1F100829F04 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				077F681F26F0D1F100829F04 /* TheSkyTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		077F682126F0D1F100829F04 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				077F682A26F0D1F100829F04 /* TheSkyUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		077F681C26F0D1F100829F04 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 077F680326F0D1EF00829F04 /* TheSky */;
-			targetProxy = 077F681B26F0D1F100829F04 /* PBXContainerItemProxy */;
-		};
-		077F682726F0D1F100829F04 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 077F680326F0D1EF00829F04 /* TheSky */;
-			targetProxy = 077F682626F0D1F100829F04 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		077F681226F0D1F000829F04 /* LaunchScreen.storyboard */ = {
@@ -631,86 +481,6 @@
 			};
 			name = Release;
 		};
-		077F683226F0D1F100829F04 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TheSkyTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Omar.TheSkyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheSky.app/TheSky";
-			};
-			name = Debug;
-		};
-		077F683326F0D1F100829F04 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TheSkyTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Omar.TheSkyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheSky.app/TheSky";
-			};
-			name = Release;
-		};
-		077F683526F0D1F100829F04 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TheSkyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Omar.TheSkyUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TheSky;
-			};
-			name = Debug;
-		};
-		077F683626F0D1F100829F04 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TheSkyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Omar.TheSkyUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TheSky;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -728,24 +498,6 @@
 			buildConfigurations = (
 				077F682F26F0D1F100829F04 /* Debug */,
 				077F683026F0D1F100829F04 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		077F683126F0D1F100829F04 /* Build configuration list for PBXNativeTarget "TheSkyTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				077F683226F0D1F100829F04 /* Debug */,
-				077F683326F0D1F100829F04 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		077F683426F0D1F100829F04 /* Build configuration list for PBXNativeTarget "TheSkyUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				077F683526F0D1F100829F04 /* Debug */,
-				077F683626F0D1F100829F04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
