@@ -22,12 +22,12 @@ class SnowyCanvasAnimationView: BaseEmitterCanvasAnimationView, CanvasAnimationT
         cell.velocityRange = 20
         cell.emissionLongitude = .pi
         cell.emissionRange = .pi / 8
-        cell.scale = 0.4
+        cell.scale = 0.5
         cell.scaleRange = 0.3
         cell.color = UIColor.white.cgColor
 
-        let circleView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 5))
-        circleView.layer.cornerRadius = 2.5
+        let circleView = UIView(frame: CGRect(x: 0, y: 0, width: 4, height: 4))
+        circleView.layer.cornerRadius = 2
         circleView.layer.backgroundColor = UIColor.white.cgColor
 
 

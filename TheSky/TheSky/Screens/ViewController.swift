@@ -63,7 +63,6 @@ class ViewController: UIViewController {
         stack.axis = .vertical
         stack.alignment = .fill
         stack.distribution = .fill
-        stack.spacing = 8
         return stack.preparedForAutolayout()
     }()
 

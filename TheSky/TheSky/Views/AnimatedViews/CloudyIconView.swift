@@ -103,7 +103,7 @@ extension CloudyIconView: IconViewType {
     func animateGrow() {
         growAnimation.toValue = scalingFactor
         centerCircle.addAnimationWithDelay(animation: growAnimation, forKey: growKeyName)
-        growAnimation.toValue = scalingFactor*1.5
+        growAnimation.toValue = scalingFactor * 1.5
         southEastCircle.addAnimationWithDelay(animation: growAnimation, forKey: growKeyName, delay: 0.2)
         northEastCircle.addAnimationWithDelay(animation: growAnimation, forKey: growKeyName, delay: 0.4)
     }

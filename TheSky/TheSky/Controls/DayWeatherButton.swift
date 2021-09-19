@@ -91,6 +91,7 @@ class DayWeatherButton: UIControl {
     private func setupView() {
         addSubview(stackView)
         stackView.fillSuperview()
+        
         layoutIfNeeded()
         layoutSubviews()
         

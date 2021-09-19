@@ -63,23 +63,21 @@ extension CloudyCanvasAnimationView: CanvasAnimationType {
 
     func present() {
         sunView.presentAnimation()
-        let finalFrameRight = cloudRight.frame.applying(CGAffineTransform(translationX: 0, y: -bounds.quarterHeight * 1.7))
-        let finalFrameLeft = cloudLeft.frame.applying(CGAffineTransform(translationX: 0, y: -bounds.quarterHeight * 1.7))
-        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 5, options: .curveEaseOut) { [weak self] in
-            self?.cloudRight.frame = finalFrameRight
-            self?.cloudLeft.frame = finalFrameLeft
-        }
-
+        cloudRight.presentAnimation()
+        cloudLeft.presentAnimation()
     }
 
     func dismiss() {
         let dispatchGroup = DispatchGroup()
 
-        let finalFrameRight = cloudRight.frame.applying(CGAffineTransform(translationX: 0, y: bounds.height ))
-        let finalFrameLeft = cloudLeft.frame.applying(CGAffineTransform(translationX: 0, y: bounds.height ))
-        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 5, options: .curveEaseOut) { [weak self] in
-            self?.cloudRight.frame = finalFrameRight
-            self?.cloudLeft.frame = finalFrameLeft
+        dispatchGroup.enter()
+        cloudLeft.dismissAnimation {
+            dispatchGroup.leave()
+        }
+
+        dispatchGroup.enter()
+        cloudRight.dismissAnimation {
+            dispatchGroup.leave()
         }
 
         dispatchGroup.enter()
